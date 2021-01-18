@@ -1,8 +1,10 @@
-local remote = game:GetService("ReplicatedStorage").SubmitAnswer
-local question = 1
+repeat wait() until game:IsLoaded()
+
+local com = game:GetService("ReplicatedStorage").SubmitAnswer
+local question = 0
 local function send(answer)
-	print(remote:InvokeServer(question, tostring(answer)))
 	question++
+	com:InvokeServer(question, tostring(answer))
 end
 
 send(4)
