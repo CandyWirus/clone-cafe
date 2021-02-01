@@ -3,7 +3,7 @@ repeat wait() until game:IsLoaded()
 local com = game:GetService("ReplicatedStorage"):WaitForChild("RemoteFunction")
 
 local function send(answer)
-	print(com:InvokeServer("SendData", answer))
+	com:InvokeServer("SendData", answer)
 end
 
 game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("ScreenGui").Background.Inner.Title.Text = "Chicken Shit Quiz"
