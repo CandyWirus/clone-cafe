@@ -8,7 +8,8 @@ local index = {
 	[456009291] = "TraineeScripts/Sizzle.lua",
 	[5403347872] = "TraineeScripts/Starblox.lua",
 	[454583783] = "TraineeScripts/Verde.lua",
-	[3453864261] = "TraineeScripts/ChickenShack.lua"
+	[3453864261] = "TraineeScripts/ChickenShack.lua",
+	[2025031960] = "TraineeScripts/Iceberg.lua"
 }
 
 repeat wait() until game:IsLoaded()
